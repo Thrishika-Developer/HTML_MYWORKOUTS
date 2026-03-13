@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input types page</title>
+    </head>
+    <body>
+        <h3 style="text-align:left;">PERSONAL DETAILS</h3>
+        <main>
+            <section>
+                <form action="Inputtypes" method="post">
+                    <!--Text-->
+                    <div>
+                        <label for="Text">
+                            <span>Candicate_Name</span>
+                            <span style="color: red;">*</span>
+                        </label>
+
+                        <input type="text"
+                        name="Text"
+                        id="Text"
+                        value=""
+                        placeholder="ender your name"
+                        required
+                        />
+                    </div>&nbsp;&nbsp;&nbsp;
+
+                    <!-- password -->
+                    <div>
+                        <label for="password">
+                        <span>password</span>
+                        <span style="color: red;">*</span>
+                        </label>
+                        
+                        <input type="password" 
+                        name="password" 
+                        id="password"
+                        value=""
+                        placeholder="password"
+                        required
+                        />
+                    </div>&nbsp;&nbsp;&nbsp;
+
+                    <!--Email-->
+                    <div>
+                        <label for="email">
+                            <span>Email</span>
+                            <span style="color: red;">*</span>
+                        </label>
+                      
+                        <input type="email" 
+                        name="email" 
+                        id="email"
+                        value=""
+                        pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
+                        placeholder="enter your Email"
+                        required
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;   
+
+                    <!-- DOB -->
+                    <div>
+                        <label for="Date">
+                        <span>DOB</span>
+                        <span style="color: red;">*</span>
+                        </label>
+                        <input type="date"
+                        name="Date"
+                        id=""
+                        value=""
+                        max="2026-03-13"
+                        required
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;  
+
+                    <!-- Date with time -->
+                    <div>
+                        <label for="Date">
+                        <span>Date with time</span>
+                        <span style="color: red;">*</span>
+                        </label>
+                        <input type="datetime-local"
+                        name="Date"
+                        id="Date"
+                        value=""
+                        max="2026-03-13 "
+                        required
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- checkbox with array -->
+                     <div>
+                    <label for="language">
+                    <span>Language</span>
+                    <span style="color: red;">*</span>
+                    </label>
+                    <input type="checkbox" name="language[]" id="language" value="tamil">Tamil
+                    <input type="checkbox" name="language[]" id="language" value="tamil">English
+                    </div>&nbsp;&nbsp;&nbsp;
+
+                    <!-- Number -->
+                    <div>
+                        <label for="Number">Number</label>
+                        <span style="color: red;">*</span>
+                        <input type="number"
+                        name="Number"
+                        id="Number"
+                        max="50"
+                        min="0"
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- phone -->
+                    <div>
+                        <label for="Phone">Phone</label>
+                        <span style="color: red;">*</span>
+                        <input type="tel"
+                        name="Phone"
+                        id="Phone"
+                        pattern="[0-9]{10}"
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- Checkbox -->
+                    <div>
+                        <label for="Checkbox">
+                        <span>Checkbox</span>
+                        <span style="color: red;">*</span>
+                        </label>
+                        <input type="checkbox"
+                        name="Checkbox"
+                        id="Checkbox"
+                        value="tamil"
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- Checkbox with auto checked -->
+                    <div>
+                    <label for="Checkbox">
+                    <span>Checkbox</span>
+                    <span style="color: red;">*</span>
+                    </label>
+                    <input type="checkbox" 
+                    name="Checkbox" 
+                    id="Checkbox"
+                    value="tamil"
+                    checked>
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- radio button -->
+                    <div>
+                    <label for="radio">
+                    <span>Gender</span>
+                    </label>
+                    <input type="radio"
+                    name="radio" 
+                    id="radio"
+                    value="male"
+                    />Male
+                            
+                    <input type="radio"
+                    name="radio"
+                    id="radio"
+                    value="female"
+                    />Female
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- File -->
+                    <div>
+                        <label for="File">File</label>
+                        <span style="color: red;">*</span>
+                        <input type="file"
+                        name="File"
+                        />
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!-- Rich text box -->
+                     <div>
+                        <label for="Comments">Comments</label>
+                        <textarea name="address" id="address" rows="20" cols="20"
+                        placeholder="Type any comments"></textarea>
+                     </div> &nbsp;&nbsp;&nbsp;
+
+                     <!-- Select box -->
+
+                    <div>
+                        <select name="Fruits" id="Fruits" required>
+                            <option value="">choose fruits</option>
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="graphs">graphs</option>
+                        </select>
+                    </div> &nbsp;&nbsp;&nbsp;
+
+                    <!--Button -->
+                    <div>
+                        <input type="submit"/>
+                        <input type="button" value="cancel">
+                        <button>cancel</button>
+                    </div> &nbsp;&nbsp;&nbsp;
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
